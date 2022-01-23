@@ -274,7 +274,7 @@ public class AdminController {
 		model.addAttribute("itineraryList", itineraryList);
 	}
 
-	// 좌석현황버튼을 클릭 시 좌석세부사항을 보여준다
+	// 좌석현황버튼을 클릭 시 좌석세부사항을 보여준다 항상
 	@RequestMapping(value = "/seat/detail_seat_list", method = RequestMethod.GET)
 	public String seat_list(Model model, ItineraryVO itineraryVO) throws Exception {
 		String itnyName = itineraryVO.getItnyName();
